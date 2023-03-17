@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>JS practise</title>
+</head>
+<body>
+  <div class="wrapper">
+    
+    <section class="show-hide">
+      <div class="show-hide__container">
+
+        <h2 class="show-hide__title title">SHOW/HIDE block</h2>
+        <button class="show-hide__button button">Open block</button>
+        <div id="show-hide-text" class="show-hide__text text hide-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod vel, sed aliquam veniam omnis tenetur repudiandae necessitatibus, eveniet delectus sint aliquid quis id excepturi fuga, laborum minima eos! Iure sed modi tempore tempora atque velit quos assumenda autem qui blanditiis molestias earum inventore minima, aspernatur quibusdam nulla ea corrupti dolore magni amet veniam optio maiores quod. Voluptatem placeat accusantium molestias blanditiis odio exercitationem. Ex rerum nisi velit impedit architecto ratione, quam saepe dolore vero eius ducimus asperiores voluptatem harum veniam voluptates recusandae temporibus maxime dolores aut officia vitae? Magni temporibus sunt vitae quasi possimus ipsum fuga, repudiandae explicabo hic voluptatibus!</div>
+
+      </div>
+    </section>
+
+    <section class="accordeon">
+      <div class="accordeon__container">
+        <h2 class="accordeon__header title">Accordeon</h2>
+        <div class="accordeon__group">
+
+          <div data-name="accordeon-title" class="accordeon__title _active">Block One</div>
+          <div class="accordeon__body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quaerat odit quos officiis at perferendis nesciunt sit, deleniti, nam itaque pariatur recusandae quis animi aspernatur repellat vel praesentium velit maiores quo architecto, facilis saepe vitae ipsa similique. Voluptates ullam quaerat, placeat neque ad corrupti laborum repellendus. Velit exercitationem ab libero?</div>
+
+          <div data-name="accordeon-title" class="accordeon__title">Block Two</div>
+          <div class="accordeon__body hide-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quaerat odit quos officiis at perferendis nesciunt sit, deleniti.</div>
+
+          <div data-name="accordeon-title" class="accordeon__title">Block Three</div>
+          <div class="accordeon__body hide-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio commodi quasi, perspiciatis ea aspernatur, a dolor laboriosam expedita nisi magni totam! Recusandae eveniet magnam maxime assumenda quo! Consequatur magni, itaque aut eum iste vero vitae eveniet non perferendis pariatur ullam repudiandae ea molestiae beatae excepturi eius porro. Fugiat tenetur amet unde blanditiis. Error deleniti quos tenetur totam eum. Cum, quis commodi perspiciatis suscipit sit nulla adipisci voluptates consectetur corporis sapiente, culpa non earum possimus reiciendis, ab fuga aliquam odio? Id aliquam fugit, eligendi ullam molestias, hic ad dolor expedita aliquid amet sapiente? Quibusdam possimus quia aut labore quidem, voluptates veniam!</div>
+
+          <div data-name="accordeon-title" class="accordeon__title">Block Four</div>
+          <div class="accordeon__body hide-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio commodi quasi, perspiciatis ea aspernatur, a dolor laboriosam expedita nisi magni totam! Recusandae eveniet magnam maxime assumenda quo! Consequatur magni, itaque aut eum iste vero vitae eveniet non perferendis pariatur ullam repudiandae ea molestiae beatae excepturi eius porro. Fugiat tenetur amet unde blanditiis. Error deleniti quos tenetur totam eum. Cum, quis commodi perspiciatis suscipit sit nulla adipisci voluptates consectetur corporis sapiente, culpa non earum possimus reiciendis, ab fuga aliquam odio? Id aliquam fugit, eligendi ullam molestias, hic ad dolor expedita aliquid amet sapiente? Quibusdam possimus quia aut labore quidem, voluptates veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati qui repellat temporibus porro velit mollitia autem aliquam, quisquam, recusandae distinctio perferendis veritatis sunt accusantium voluptatibus unde maxime corrupti, repellendus vero nemo. Molestiae unde voluptatibus ipsum numquam sequi quaerat placeat ut? Quam distinctio libero nobis at delectus minima consequatur corporis!</div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="tabs">
+      <div class="tabs__container">
+        <h2 class="tabs__header title">Tabs</h2>
+        <ul class="tabs__list">
+          <li data-tab="tab-1" class="tabs__item button _active">Tab One</li>
+          <li data-tab="tab-2" class="tabs__item button">Tab Two</li>
+          <li data-tab="tab-3" class="tabs__item button">Tab Three</li>
+        </ul>
+        <div data-tab-content class="tabs__body " id="tab-1">
+          <div class="tabs__subtitle">Content tab One</div>
+          <div class="tabs__text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis veniam saepe fugiat libero perferendis soluta, quisquam atque ea veritatis reprehenderit quam consequuntur! Possimus dolorum neque obcaecati saepe. Quidem dolores temporibus tempora at omnis vel ea, odit eum illum asperiores? Nesciunt commodi pariatur modi ratione, itaque repudiandae saepe eveniet ab.</div>
+        </div>
+        <div data-tab-content class="tabs__body hide-block" id="tab-2">
+          <div class="tabs__subtitle">Content tab Two</div>
+          <div class="tabs__text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis veniam saepe fugiat libero perferendis soluta, quisquam atque ea veritatis reprehenderit quam consequuntur! Possimus dolorum neque obcaecati saepe. Quidem dolores temporibus tempora at omnis vel ea, odit eum illum asperiores? Nesciunt commodi pariatur modi ratione, itaque repudiandae saepe eveniet ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe, ex illo optio itaque aspernatur ducimus est sint, consequuntur perferendis necessitatibus fuga placeat dolorem quas autem fugiat veniam adipisci distinctio, id corporis tempora. Impedit sit iste fugit magnam nostrum modi illum numquam voluptates ducimus iure. Possimus, ipsam explicabo eaque modi accusamus expedita incidunt, nemo, ut perferendis et ullam tempora! Possimus beatae illum laboriosam tempora officia cum delectus? Sit eveniet soluta eos dolore commodi officiis placeat incidunt blanditiis amet id ipsam, dignissimos nam fugit voluptatem consectetur ad aperiam hic cumque a debitis. Accusamus inventore architecto ab, eveniet illum placeat dolores tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. A facere labore commodi in. Enim pariatur necessitatibus ex aliquam totam labore, ullam alias quasi. Dolor consectetur, itaque ea minima ad odit commodi assumenda quas saepe, temporibus, voluptatem culpa. Alias repudiandae praesentium quae totam ducimus facilis eveniet? Ullam minus dolore fugiat incidunt.</div>
+        </div>
+        <div data-tab-content class="tabs__body hide-block" id="tab-3">
+          <div class="tabs__subtitle">Content tab Three</div>
+          <div class="tabs__text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis veniam saepe fugiat libero perferendis soluta, quisquam atque ea veritatis reprehenderit quam consequuntur! Possimus dolorum neque obcaecati saepe. Quidem dolores temporibus tempora at omnis vel ea, odit eum illum asperiores? Nesciunt commodi pariatur modi ratione, itaque repudiandae saepe eveniet ab. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore sunt aliquam, laboriosam perferendis exercitationem eveniet aut provident quibusdam quisquam earum molestias id incidunt possimus commodi dolor distinctio aspernatur quo fugit! Quam itaque quae rem nobis, asperiores quisquam suscipit consequatur iste minima ut laboriosam culpa ullam laudantium vitae magnam provident assumenda.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal">
+      <div class="modal__container">
+        <h2 class="modal__header title">Modal window</h2>
+        <div class="modal__body">
+            <div class="modal__nav">
+              <button data-modal-button="modal-1" type="button" class="modal__button button">Open modal One</button>
+              <button data-modal-button="modal-2" type="button" class="modal__button button">Open modal Two</button>
+              <button data-modal-button="modal-3" type="button" class="modal__button button">Open modal Three</button>
+            </div>
+          <div id="modal-1" data-modal class="modal__content hide-block">
+            <div class="modal__wrapper">
+              <div class="modal__box">
+                <div data-modal-close class="modal__close">X</div>
+                <div class="modal__title">Modal window One</div>
+                <div class="modal__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis nostrum distinctio illo ipsam harum, accusantium accusamus esse? Ducimus ab quod commodi, tempore perferendis omnis voluptate eum, placeat eos aut laboriosam molestias necessitatibus, mollitia illum vitae? Sequi, accusamus dolores officia tenetur placeat corrupti eum magni inventore voluptas minus rem dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tenetur quas veritatis eaque enim beatae quia in quasi. At odio error accusamus voluptatem quasi accusantium dolores inventore ex nobis aut repellendus enim quisquam similique doloribus facere soluta sapiente, a quam quo! Totam omnis accusantium et deserunt repellat perferendis ea aliquid.</div>
+              </div>
+            </div>
+          </div>
+          <div id="modal-2" data-modal class="modal__content hide-block">
+            <div class="modal__wrapper">
+              <div class="modal__box">
+                <div data-modal-close class="modal__close">X</div>
+                <div class="modal__title">Modal window Two</div>
+                <div class="modal__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis nostrum distinctio illo ipsam harum, accusantium accusamus esse? Ducimus ab quod commodi, tempore perferendis omnis voluptate eum, placeat eos aut laboriosam molestias necessitatibus, mollitia illum vitae? Sequi, accusamus dolores officia tenetur placeat corrupti eum magni inventore voluptas minus rem dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tenetur quas veritatis eaque enim beatae quia in quasi. At odio error accusamus voluptatem quasi accusantium dolores inventore ex nobis aut repellendus enim quisquam similique doloribus facere soluta sapiente, a quam quo! Totam omnis accusantium et deserunt repellat perferendis ea aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta, laborum quasi consectetur ea accusantium nostrum impedit iusto modi, est saepe mollitia nisi exercitationem sit. Assumenda officia quia laborum aliquid expedita, totam maxime quaerat corporis, quas quasi ex porro, illo nemo quam ipsam tempore illum aperiam tempora necessitatibus atque modi rem distinctio deleniti. Veritatis expedita impedit illo distinctio et quam, provident minima quod accusamus perferendis, incidunt assumenda quasi fuga aliquid suscipit. Distinctio non ipsam hic voluptate ad facere deserunt at totam magnam, debitis itaque quas eum odio dignissimos, cumque ab sit blanditiis saepe temporibus ipsa nisi veritatis corrupti! Expedita, perspiciatis.</div>
+              </div>
+            </div>
+          </div>
+          <div id="modal-3" data-modal class="modal__content hide-block">
+            <div class="modal__wrapper">
+              <div class="modal__box">
+                <div data-modal-close class="modal__close">X</div>
+                <div class="modal__title">Modal window Three</div>
+                <div class="modal__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus enim aliquid? Cum sunt iusto harum sequi saepe nemo, earum non reprehenderit, inventore autem dolorem.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
