@@ -117,11 +117,13 @@ tabTitle.forEach(function (item) {
 const modalButtons = document.querySelectorAll('[data-modal-button]');
 const modalButtonsClose = document.querySelectorAll('[data-modal-close]');
 const modalWindowClose = document.querySelectorAll('[data-modal]');
+const documentBody = document.querySelector('body');
 
 modalButtons.forEach(function(item) {
   item.addEventListener('click', function() {
     const modalId = this.dataset.modalButton;
     const modalWindow = document.querySelector('#' + modalId);
+    documentBody.classList.add('_lock');
     modalWindow.classList.remove('hide-block');
 
     this.classList.add('_active');
@@ -138,6 +140,7 @@ modalButtonsClose.forEach(function(item) {
     this.closest('[data-modal]').classList.add('hide-block'); // поиск среди родителей по селектору
 
     removeActiveClass();
+    removeBodyLock();
   });
 });
 
@@ -146,6 +149,7 @@ modalWindowClose.forEach(function(item) {
     this.classList.add('hide-block');
     
     removeActiveClass();
+    removeBodyLock();
   });
 });
 
@@ -153,6 +157,9 @@ function removeActiveClass() {
   modalButtons.forEach(function(item) {
     item.classList.remove('_active');
   });
-}
+};
 
+function removeBodyLock() {
+  documentBody.classList.remove('_lock');
+};
 

@@ -14,6 +14,10 @@ html, body {
   font-family: "Montserrat";
 }
 
+._lock {
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -21,6 +25,7 @@ ul {
 [class*=__container] {
   margin: 0 auto;
   max-width: 700px;
+  padding: 0 15px;
 }
 
 .wrapper {
@@ -160,7 +165,7 @@ section:not(:last-child) {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 50px;
+  padding: 50px 15px;
   background-color: #c1c1c156;
   z-index: 999;
   overflow: auto;
